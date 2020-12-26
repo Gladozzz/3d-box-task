@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+* {
+	font-family: "Roboto";
+}
+
+.App {
+    padding: 20px;
+  }
+  
+  .App h1 {
+    font-size: 26px;
+  }
+  
+  .App input {
+    padding: 10px;
+  }
+  
+  .App hr {
+    margin-top: 20px;
+  }
+.container {
+  width: 1000px;
+  height: 1000px;
+  display: inline-block;
+  margin: 10px;
+}
+.inputs *{
+  vertical-align: center;
+}
+.inputs {
+  vertical-align: top;
+  display: inline-block;
+}
+
+:focus {
+  outline: none;
+}
+
+label {
+  text-align: center;
+  font-size: 24px;
+}
+
+input {
+  background: #ffffff !important;
+  outline: none;
+  height: 24px;
+  width: 120px;
+  margin: 10px;
+  font-size: 24px;
+}
+
+.badInput {
+  border: 1px solid red;
+  color: red;
+}
+
+.goodInput {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+button {
+  margin: 10px;
+  vertical-align: middle;
+}
+:root {
+    --primary: #39A9DB;
+    --warning: #F9DC5C;
+    --danger: #E84855;
+    --success: #ABE188;
+    --white: #fdfdfd;
+    --dark: #181717;
+  }
+  
+  .btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    /* transform: translateY(-3px); */
+    opacity: 0.7;
+  }
+  
+  /* Button Colors and Styles */
+  
+  .btn--primary--solid {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+  }
+  
+  .btn--warning--solid {
+    background-color: var(--warning);
+    color: var(--dark);
+    border: none;
+  }
+  
+  .btn--danger--solid {
+    background-color: var(--danger);
+    color: var(--white);
+    border: none;
+  }
+  
+  .btn--success--solid {
+    background-color: var(--success);
+    color: var(--white);
+    border: none;
+  }
+  
+  .btn--primary--outline {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+  }
+  
+  .btn--warning--outline {
+    background-color: transparent;
+    border: 2px solid var(--warning);
+    color: var(--warning);
+  }
+  
+  .btn--danger--outline {
+    background-color: transparent;
+    border: 2px solid var(--danger);
+    color: var(--danger);
+  }
+  
+  .btn--success--outline {
+    background-color: transparent;
+    border: 2px solid var(--success);
+    color: var(--success);
+  }
+  
+  /* Button Size */
+  
+  .btn--medium {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  .btn--large {
+    padding: 20px 140px;
+    font-size: 50px;
+  }
+  
+
+/*# sourceMappingURL=styles.css.map*/

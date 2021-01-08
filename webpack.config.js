@@ -48,7 +48,7 @@ module.exports = {
   resolve: {
     roots: [__dirname, path.join(__dirname, 'src')],
     modules: ['node_modules'],
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx']
   },
   plugins,
   output: {

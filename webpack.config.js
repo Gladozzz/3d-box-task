@@ -30,7 +30,7 @@ if (process.env.NODE_ENV === 'production') {
     new CleanWebpackPlugin()
   );
   // plugins.push(new webpack.optimize.DedupePlugin());
-  plugins.push(new webpack.optimize.OccurenceOrderPlugin());
+  plugins.push(new webpack.optimize.OccurrenceOrderPlugin());
 } else {
   plugins.push(
     new webpack.LoaderOptionsPlugin({

@@ -76,7 +76,7 @@ module.exports = {
       { test: /\.json$/, use: 'json-loader' },
     ]
   },
-  devtool: process.env.NODE_ENV !== 'production' ? 'source-map' : null,
+  devtool: process.env.NODE_ENV !== 'production' ? 'source-map' : false,
   devServer: {
     headers: { 'Access-Control-Allow-Origin': '*' }
   }

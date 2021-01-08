@@ -22,11 +22,12 @@ var plugins = [
 
 if (process.env.NODE_ENV === 'production') {
   plugins.push(
-    new CleanWebpackPlugin(['public/assets/'], {
-      root: __dirname,
-      verbose: true,
-      dry: false
-    })
+    // new CleanWebpackPlugin(['public/assets/'], {
+    //   root: __dirname,
+    //   verbose: true,
+    //   dry: false
+    // })
+    new CleanWebpackPlugin()
   );
   plugins.push(new webpack.optimize.DedupePlugin());
   plugins.push(new webpack.optimize.OccurenceOrderPlugin());

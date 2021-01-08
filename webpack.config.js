@@ -27,7 +27,11 @@ if (process.env.NODE_ENV === 'production') {
     //   verbose: true,
     //   dry: false
     // })
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin({
+      verbose: true,
+      dry: false
+    })
+    // new CleanWebpackPlugin()
   );
   // plugins.push(new webpack.optimize.DedupePlugin());
   // plugins.push(new webpack.optimize.OccurrenceOrderPlugin());

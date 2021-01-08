@@ -4,7 +4,7 @@ var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 var publicPath = 'http://localhost:8050/public/assets';
 var cssName = process.env.NODE_ENV === 'production' ? 'styles-[hash].css' : 'styles.css';
@@ -17,7 +17,7 @@ var plugins = [
       NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development')
     }
   }),
-  new MiniCssExtractPlugin({ filename: cssName })
+  new MiniCssExtractPlugin({ filename: cssName }),
 ];
 
 if (process.env.NODE_ENV === 'production') {

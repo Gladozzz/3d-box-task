@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === 'production') {
     // })
     new CleanWebpackPlugin()
   );
-  plugins.push(new webpack.optimize.DedupePlugin());
+  // plugins.push(new webpack.optimize.DedupePlugin());
   plugins.push(new webpack.optimize.OccurenceOrderPlugin());
 } else {
   plugins.push(

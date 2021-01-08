@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './App.css';
+import './app.css';
 import Threejsview from './threejsview';
 
 const propTypes = {

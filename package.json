@@ -31,15 +31,15 @@
     "react-three-fiber": "^5.3.10",
     "serve-favicon": "^2.5.0",
     "@babel/register": "^7.12.10",
-    "three": "^0.124.0"
-  },
-  "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-transform-react-jsx": "^7.12.11",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
+    "three": "^0.124.0"
+  },
+  "devDependencies": {
     "bindings": "^1.5.0",
     "bluebird": "^3.7.2",
     "clean-webpack-plugin": "^3.0.0",

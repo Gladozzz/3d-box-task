@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "set NODE_ENV='production' && webpack",
-    "build-gyp": "NODE_PATH=./src nodemon server.js",
-    "nodemon": "(set NODE_PATH=./src; && nodemon server.js)",
+    "build-gyp": "node-gyp rebuild",
+    "nodemon": "NODE_PATH=./src nodemon server.js",
     "start": "npm run nodemon",
     "dev": "(webpack serve --hot --devtool eval-source-map --output-pathinfo --watch --inline --content-base public --port 8050 --host 0.0.0.0) && npm run nodemon"
   },

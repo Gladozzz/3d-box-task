@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "set NODE_ENV='production' && webpack",
+    "build": "NODE_ENV='production' webpack",
+    "build-windows": "set NODE_ENV='production' && webpack",
     "build-gyp": "node-gyp rebuild",
     "nodemon": "NODE_PATH=./src nodemon server.js",
     "nodemon-windows": "set NODE_PATH=./src; && nodemon server.js",
